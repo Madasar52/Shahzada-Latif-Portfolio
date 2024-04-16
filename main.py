@@ -4,7 +4,7 @@ import os
 
 
 app = Flask(__name__)
-app.secret_key = "2589"
+app.secret_key = os.environ.get("secret_key")
 
 
 @app.route("/")
@@ -26,8 +26,8 @@ def case_study():
 @app.route("/contact", methods=["GET","POST"])
 def contact():
     if request.method=="POST":
-        my_email="latifshahzada4@gmail.com"
-        password="jfkzbjgubfytvbcw"
+        my_email=os.environ.get("email")
+        password=os.environ.get("password")
         message = request.form['message']
         name = request.form['name']
         email = request.form['email']
@@ -35,7 +35,7 @@ def contact():
             connection.starttls()
             connection.login(user=my_email,password=password)
             connection.sendmail(from_addr=my_email,
-                                to_addrs="madasar54321@gmail.com",
+                                to_addrs=os.environ.get("my_email"),
                                 msg=f"Subject: Query from Shahzada's portfolio!\n\nMessage: {message}\n\nContact information of sender:\nName: {name}\n\nEmail: {email}",
                                 )
             flash("Email sent to Shahzada!")
