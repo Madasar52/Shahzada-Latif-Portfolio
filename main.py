@@ -1,9 +1,4 @@
 from flask import Flask, render_template, redirect, url_for, request, flash
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
-from sqlalchemy import Integer, String, Float
-from wtforms import StringField, SubmitField
-from wtforms.validators import DataRequired
-import requests
 import smtplib
 import os
 
