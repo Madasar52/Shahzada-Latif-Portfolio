@@ -40,7 +40,7 @@ def contact():
             connection.starttls()
             connection.login(user=my_email,password=password)
             connection.sendmail(from_addr=my_email,
-                                to_addrs="madasar54321@gmail.com",
+                                to_addrs=os.environ.get("my_email"),
                                 msg=f"Subject: Query from Shahzada's portfolio!\n\nMessage: {message}\n\nContact information of sender:\nName: {name}\n\nEmail: {email}",
                                 )
             flash("Email sent to Shahzada!")
