@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<title>Shahzada Madasar Latif - Projects</title>
+	
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Bootstrap 5">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.ico"> 
+	
+	<!-- Google Fonts -->
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	
+	<!-- Bootstrpa Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	
+	<!-- FontAwesome JS -->
+    <script defer src="static/assets/fontawesome/js/all.js"></script>
+
+	<!-- Theme CSS -->  
+	<link id="theme-style" rel="stylesheet" href="static/assets/css/theme-1.css">
+
+</head> 
+
+
+<body>
+	
+	<div class="container-fluid">
+
+	
+			<div class="side-panel position-relative">
+				 
+				<nav class="navbar">
+			        <div aria-labelledby="offcanvasNavbarLabel" class="offcanvas offcanvas-start show d-flex" id="offcanvasNavbar" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1">
+			            <div class="offcanvas-body d-flex align-items-center ">
+			                <ul class="main-nav navbar-nav text-center">
+				                
+								<li class="nav-item">
+									<a class="nav-link d-flex flex-column" href="{{ url_for('home') }}"><span class="icon-holder"><i class="fa-solid fa-circle-user"></i></span><span class="nav-text">About</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active d-flex flex-column" href="{{ url_for('projects') }}"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span><span class="nav-text">Projects</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link d-flex flex-column" href="{{ url_for('blog_home') }}"><span class="icon-holder"><i class="fa-solid fa-pen-fancy"></i></span><span class="nav-text">Blog</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link d-flex flex-column" href="{{ url_for('resume') }}"><span class="icon-holder"><i class="fa-solid fa-file-lines"></i></span><span class="nav-text">Resume</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link d-flex flex-column" href="{{ url_for('contact') }}"><span class="icon-holder"><i class="fa-solid fa-comment-dots"></i></span><span class="nav-text">Contact</a>
+								</li>
+								<li class="nav-item nav-item-close">
+				                    <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas" type="button"><i class="bi bi-x"></i></button>
+				                </li>
+							</ul>
+			            </div>
+			        </div>
+				  
+				</nav>
+			</div><!--//side-panel-->
+			
+			<div class="main-content-wrapper">
+				<div class="container-fluid">
+					<div class="top-bar text-center position-relative">
+						<div class="top-bar-inner">
+							
+							<a class="menu-toggler" data-bs-toggle="offcanvas" href="#offcanvasNavbar" role="button" aria-controls="offcanvasNavbar">
+								 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+								  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+								</svg>
+					        </a>
+					        
+					        <div class="mode-toggle text-center">
+							    
+							    <input class="toggle" id="darkmode" type="checkbox">
+							    <label class="toggle-btn mx-auto mb-0" for="darkmode">
+							        <span class="day-icon toggle-icon"> <i class="bi bi-sun-fill"></i></span>
+							        <span class="night-icon toggle-icon"><i class="bi bi-moon-fill"></i></span>
+							        
+							    </label>
+							    
+							</div><!--//mode-toggle-->
+							
+							<a class="btn btn-primary top-bar-cta" href="{{ url_for('contact') }}">Hire Me</a>
+					
+							<ul class="social-list list-inline mx-auto d-none d-lg-block">
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://twitter.com/latif_shah9958"><i class="fa-brands fa-twitter fa-fw"></i></a></li>
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://github.com/Madasar52"><i class="fa-brands fa-github fa-fw"></i></a></li>
+								
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://www.linkedin.com/in/shahzada-madasar-latif-9027bb130/"><i class="fa-brands fa-linkedin-in fa-fw"></i></a></li>
+								
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://stackoverflow.com/users/24164740/madasar-latif"><i class="fa-brands fa-stack-overflow fa-fw"></i></a></li>
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://codepen.io/Madasar-Latif"><i class="fa-brands fa-medium fa-fw"></i></a></li>
+							</ul><!--//social-list-->
+							
+						</div><!--//top-bar-inner-->
+						
+					</div><!--//top-bar-->
+					
+					<section class="page-intro-section section has-profile-image mx-auto ">
+					
+						<div class="profile-holder text-center">
+							<img class="profile-pic rounded-circle" src="static/assets/images/profile.png" alt="image">
+						</div><!--//profile-holder-->
+						<div class="intro-holder">
+							<h2 class="intro-name text-center">My Projects</h2>
+							<div class="profile-intro text-center limit-max-width mx-auto">
+							    <p class="mb-4">Over the course of my coding bootcamp, I have built close to 80 projects varying from simple GUI based coffee machines to complex webscraping, fully functional websites with databases and users, automation projects like automating jobs on LinkedIn to analyzing complex data with Data Science. Here are some of the projects and please view my GitHub account for more details and source codes. </p>
+							    <div class="text-center mt-4">
+								    <a class="btn btn-secondary" href="templates/contact.html">Start A Conversation <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg></a>
+							    </div><!--//section-cta-->
+							</div>
+							
+						</div><!--//intro-holder-->
+						
+					</section><!--//page-intro-section-->
+					
+			
+                    <section class="projects-section section mx-auto">
+	                    <div class="row justify-content-center gx-lg-5">
+		                    <div class="project-item col-12 col-md-6 col-lg-12 mb-5">
+			                    <div class="project-item-inner row">
+								    <div class="col-12 col-lg-5 col-xl-4">
+								        <img class="project-thumb rounded-2 mb-3 mb-lg-0 rounded mx-auto" src="static/assets/images/projects/project-0.png" alt="image">
+								    </div>
+								    <div class="col-12 col-lg-7 col-xl-8">
+									    <h3 class="title"><a href="https://github.com/Madasar52/Data-Science-Project-7-Nobel_Prize_Analysis">Analyzing Nobel Prize Data</a></h3>
+								        <div class="intro mb-3">In this Data Science Project I analyzed the "Nobel Prize Data" begining from 1901 to 2020 using various Python modules like Pandas, Plotly, Matplotlib and Seabron to create various analytic bars, charts, graphs, Sunburst charts and choropleth to display data. </div>
+								        
+								        <h4 class="subtitle">Tech Stack:</h4>
+								        <ul class="tech-stack list-inline">
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/python.svg" alt=""></li>
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/pandas-seeklogo.svg" alt=""></li>
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/plotly-logo-vector.svg" alt=""></li>
+											<li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/Matplotlib.svg" alt=""></li>
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/seaborn-seeklogo.svg" alt=""></li>
+								        </ul>
+								        
+								        <a class="more-link" href="https://github.com/Madasar52/Data-Science-Project-7-Nobel_Prize_Analysis">View More Details <span class="link-arrow"><i class="bi bi-arrow-right"></i></span></a>
+								    </div><!--//col-->
+			                    </div><!--//project-item-inner-->
+							</div><!--//project-item-->
+							
+							<div class="project-item col-12 col-md-6 col-lg-12 mb-5">
+			                    <div class="project-item-inner row">
+								    <div class="col-12 col-lg-5 col-xl-4">
+								        <img class="project-thumb rounded-2 mb-3 mb-lg-0 rounded mx-auto" src="static/assets/images/projects/project-1.gif" alt="image">
+								    </div>
+								    <div class="col-12 col-lg-7 col-xl-8">
+									    <h3 class="title"><a href="https://github.com/Madasar52/My-Top-10-Movies-Website">Top 10 Movies List</a></h3>
+								        <div class="intro mb-3">Top 10 movies website using Flask module in Python. I used WTFroms to get the input from the user and then use "The Movie Database" API to search the movie name and gather the title, the image url, year and description of the movie. I used SQLite data to add, view, edit and delete the top 10 movies list.</div>
+								        
+								        <h4 class="subtitle">Tech Stack:</h4>
+								        
+								        <ul class="tech-stack list-inline">
+											<li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/python.svg" alt=""></li>
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/pocoo_flask-ar21.svg" alt=""></li>
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/html5.svg" alt=""></li>
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/css3.svg" alt=""></li>
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/postgresql-vertical.svg" alt=""></li>
+
+								        </ul>
+								        
+								        <a class="more-link" href="https://github.com/Madasar52/My-Top-10-Movies-Website">View More Details <span class="link-arrow"><i class="bi bi-arrow-right"></i></span></a>
+								    </div><!--//col-->
+			                    </div><!--//project-item-inner-->
+							</div><!--//project-item-->
+		                    <div class="project-item col-12 col-md-6 col-lg-12 mb-5">
+			                    <div class="project-item-inner row">
+								    <div class="col-12 col-lg-5 col-xl-4">
+								        <img class="project-thumb rounded-2 mb-3 mb-lg-0 rounded mx-auto" src="static/assets/images/projects/project-2.png" alt="image">
+								    </div>
+								    <div class="col-12 col-lg-7 col-xl-8">
+									    <h3 class="title"><a href="https://github.com/Madasar52/Flight-Deal-Finder">Flight Deal Finder</a></h3>
+								        <div class="intro mb-3">This project uses sheety to read and write Google Sheet where you can input the city and lowest price for a flight from your origin city. I used "Tequila Kiwi" API to get IATA codes for cities as well as the flight prices. And then ran the code, if the flight price comes below the mentioned flight ticket, it sends the user an email using the SMTP module and an SMS through the "Twilio" API.</div>
+								        
+								        <h4 class="subtitle">Tech Stack:</h4>
+								        <ul class="tech-stack list-inline">
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/python.svg" alt=""></li>
+									        <li class="list-inline-item"><img src="static/assets/images/tech-icons/api-integration-cloud-computing-cogwheel-17276.svg" alt=""></li>
+											<li class="list-inline-item"><img src="static/assets/images/tech-icons/smtp1.jpeg" alt=""></li>
+											<li class="list-inline-item"><img src="static/assets/images/tech-icons/google-sheets-logo-icon.svg" alt=""></li>
+								        </ul>
+								        
+								        <a class="more-link" href="https://github.com/Madasar52/Flight-Deal-Finder">View More Details<span class="link-arrow"><i class="bi bi-arrow-right"></i></span></a>
+								    </div><!--//col-->
+							    </div><!--//project-item-inner-->
+							</div><!--//project-item-->
+							
+							<div class="project-item col-12 col-md-6 col-lg-12 mb-5">
+			                    <div class="project-item-inner row">
+								    <div class="col-12 col-lg-5 col-xl-4">
+								        <img class="project-thumb rounded-2 mb-3 mb-lg-0 rounded mx-auto" src="static/assets/images/projects/project-3.png" alt="image">
+								    </div>
+								    <div class="col-12 col-lg-7 col-xl-8">
+									    <h3 class="title"><a href="https://github.com/Madasar52/Amazon-Price-Tracker-With-Selenium">Amazon Price Tracker</a></h3>
+								        <div class="intro mb-3">This project uses Python webscrapping using Beautiful Soup and Selenium to navigate through amazon website and scrape price of a product. As soon as the price drops below the mentioned value, it sends me an email for price reduction and the current price using the SMTP module.</div>
+								        
+								        <h4 class="subtitle">Tech Stack:</h4>
+								        <ul class="tech-stack list-inline">
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/python.svg" alt=""></li>
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/BS4.png" alt=""></li>
+											<li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/smtp1.jpeg" alt=""></li>
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/twilio-icon-svgrepo-com.svg" alt=""></li>
+											<li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/selenium-svgrepo-com.svg" alt=""></li>
+								        </ul>
+								        
+								        <a class="more-link" href="https://github.com/Madasar52/Amazon-Price-Tracker-With-Selenium">View More Details <span class="link-arrow"><i class="bi bi-arrow-right"></i></span></a>
+								    </div><!--//col-->
+							    </div><!--//project-item-inner-->
+							</div><!--//project-item-->
+		                    
+							
+							<div class="project-item col-12 col-md-6 col-lg-12 mb-5">
+			                    <div class="project-item-inner row">
+								    <div class="col-12 col-lg-5 col-xl-4">
+								        <img class="project-thumb rounded-2 mb-3 mb-lg-0 rounded mx-auto" src="static/assets/images/projects/project-thumb-4.png" alt="image">
+								    </div>
+								    <div class="col-12 col-lg-7 col-xl-8">
+									    <h3 class="title"><a href="https://github.com/Madasar52/Password-Manager-Project">Password Manager</a></h3>
+								        <div class="intro mb-3">This Password Manager project uses the Python Tkinter GUI module to create a graphic user interface which is user friendly. It geneates a complex and safe password for each website the user enters and then saves the name of website, email and the password on an external data.txt file. It can also edit or search for passwords. </div>
+								        
+								        <h4 class="subtitle">Tech Stack:</h4>
+								        <ul class="tech-stack list-inline">
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/python.svg" alt=""></li>
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/json-ar21.svg" alt=""></li>
+
+								        </ul>
+								        
+								        <a class="more-link" href="https://github.com/Madasar52/Password-Manager-Project">View More Details <span class="link-arrow"><i class="bi bi-arrow-right"></i></span></a>
+								    </div><!--//col-->
+							    </div><!--//project-item-inner-->
+							</div><!--//project-item-->
+
+							<div class="project-item col-12 col-md-6 col-lg-12 mb-5">
+			                    <div class="project-item-inner row">
+								    <div class="col-12 col-lg-5 col-xl-4">
+								        <img class="project-thumb rounded-2 mb-3 mb-lg-0 rounded mx-auto" src="static/assets/images/projects/project-5.png" alt="image">
+								    </div>
+								    <div class="col-12 col-lg-7 col-xl-8">
+									    <h3 class="title"><a href="https://github.com/Madasar52/Snake-Game">Snake Game</a></h3>
+								        <div class="intro mb-3">The classic Snake Game which I first played on a Nokia 3310 and quite possibly the first game I ever played. This was a project I enjoyed greatly building since I had so much memories associated with it. I built it using the Python Tkinter GUI interface and Object Oriented Programming by creating different classes for each major component such as food, scoreboard and the snake. </div>
+								        
+								        <h4 class="subtitle">Tech Stack:</h4>
+								        <ul class="tech-stack list-inline">
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/python.svg" alt=""></li>
+											<li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/oop.png" alt=""></li>
+								        </ul>
+								        
+								        <a class="more-link" href="https://github.com/Madasar52/Snake-Game">View More Details <span class="link-arrow"><i class="bi bi-arrow-right"></i></span></a>
+								    </div><!--//col-->
+							    </div><!--//project-item-inner-->
+							</div><!--//project-item-->
+							<div class="project-item col-12 col-md-6 col-lg-12 mb-5">
+			                    <div class="project-item-inner row">
+								    <div class="col-12 col-lg-5 col-xl-4">
+								        <img class="project-thumb rounded-2 mb-3 mb-lg-0 rounded mx-auto" src="static/assets/images/projects/project-6.jpg" alt="image">
+								    </div>
+								    <div class="col-12 col-lg-7 col-xl-8">
+									    <h3 class="title"><a href="https://github.com/Madasar52/Data-Entry-Capstone-Project">Data entry Job Automation Project</a></h3>
+								        <div class="intro mb-3">This project automates the Data Entry Job. To build this specific project I used copiling rent prices as an example. I used Beautiful Soup to do web scraping and find all the rental properties in San Francisco below 3000$ and then used Selenium to autofill the data(i.e; address, price per month and property link) in a Google Form and once it is complete, create a spreadsheet.</div>
+								        
+								        <h4 class="subtitle">Tech Stack:</h4>
+								        <ul class="tech-stack list-inline">
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/python.svg" alt=""></li>
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/selenium-svgrepo-com.svg" alt=""></li>
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/google-sheets-logo-icon.svg" alt=""></li>
+								        </ul>
+								        
+								        <a class="more-link" href="https://github.com/Madasar52/Data-Entry-Capstone-Project">View More Details <span class="link-arrow"><i class="bi bi-arrow-right"></i></span></a>
+								    </div><!--//col-->
+							    </div><!--//project-item-inner-->
+							</div><!--//project-item-->
+
+							<div class="project-item col-12 col-md-6 col-lg-12 mb-5">
+			                    <div class="project-item-inner row">
+								    <div class="col-12 col-lg-5 col-xl-4">
+								        <img class="project-thumb rounded-2 mb-3 mb-lg-0 rounded mx-auto" src="static/assets/images/projects/project-7.jpg" alt="image">
+								    </div>
+								    <div class="col-12 col-lg-7 col-xl-8">
+									    <h3 class="title"><a href="https://github.com/Madasar52/Twitter-Speed-Complaint-Bot">Twitter Speed Complaint Bot</a></h3>
+								        <div class="intro mb-3">This was a very interesting project to build since I was tired of calling my internet provider about slow speed and not getting an appropriate response. I built it using Object Oriented Programming to create a Class for InternetSpeedTwitterBot, with two methods. First is to get the internet speed using Selenium from fast.com, the scrapping the speed using Selenium Webdriver and then if the internet speed is below the speed mentioned in minimum guarantee speed then logging into twitter and sending a tweet at the internet provider using Selenium.</div>
+								        
+								        <h4 class="subtitle">Tech Stack:</h4>
+								        <ul class="tech-stack list-inline">
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/python.svg" alt=""></li>
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/selenium-svgrepo-com.svg" alt=""></li>
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/BS4.png" alt=""></li>
+											<li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/oop.png" alt=""></li>
+								        </ul>
+								        
+								        <a class="more-link" href="https://github.com/Madasar52/Twitter-Speed-Complaint-Bot">View More Details <span class="link-arrow"><i class="bi bi-arrow-right"></i></span></a>
+								    </div><!--//col-->
+							    </div><!--//project-item-inner-->
+							</div><!--//project-item-->
+
+							<div class="project-item col-12 col-md-6 col-lg-12 mb-5">
+			                    <div class="project-item-inner row">
+								    <div class="col-12 col-lg-5 col-xl-4">
+								        <img class="project-thumb rounded-2 mb-3 mb-lg-0 rounded mx-auto" src="static/assets/images/projects/pong.png" alt="image">
+								    </div>
+								    <div class="col-12 col-lg-7 col-xl-8">
+									    <h3 class="title"><a href="https://github.com/Madasar52/Pong-Game">The Classic Pong Game</a></h3>
+								        <div class="intro mb-3">Building the classic Pong game from 1970s with Python was a great project to test the limits of my python skills and integrating Object Oriented Programming to build a project with GUI using the Tkinter Python module.</div>
+								        
+								        <h4 class="subtitle">Tech Stack:</h4>
+								        <ul class="tech-stack list-inline">
+									        <li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/python.svg" alt=""></li>
+											<li class="list-inline-item"><img class="rounded" src="static/assets/images/tech-icons/oop.png" alt=""></li>
+								        </ul>
+								        
+								        <a class="more-link" href="https://github.com/Madasar52/Pong-Game">View More Details <span class="link-arrow"><i class="bi bi-arrow-right"></i></span></a>
+								    </div><!--//col-->
+							    </div><!--//project-item-inner-->
+							</div><!--//project-item-->
+
+	                    </div><!--//row-->
+												
+						<div class="section-cta text-center d-grid col-6 mx-auto">
+						    <a class="btn btn-secondary" href="https://github.com/Madasar52">See All Projects On My GitHub <span class="d-none d-lg-inline"></span></a>
+						</div>
+						
+                    </section><!--//section-->
+                    
+                    <section class="leadgen-section section mx-auto">
+	   
+		                   <h3 class="section-heading text-start text-md-center text-highlight"> Need Help With Your Project?</h3>
+		                   <div class="intro text-md-center"> </div>
+		                    <div class="text-center mt-4">
+									    <a class="btn btn-secondary" href="{{ url_for('contact') }}">Get In Touch <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
+	</svg></a>
+							</div>
+	                    
+                   </section><!--//leadgen-section-->
+					
+				</div>
+			</div><!--//main-content-wrapper-->
+
+		</div><!--//row-->
+	
+	</div><!--//container-->
+	
+	<footer class="footer text-center py-4">
+		<small class="copyright">Shahzada Madasar Latif - Portfolio</a></small>
+	</footer>
+	
+	<!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
+	<div id="config-panel" class="config-panel config-panel-hide d-none d-lg-block">
+		<div class="panel-inner">
+			<a id="config-trigger" class="config-trigger text-center" href="#"><i class="fas fa-cog mx-auto" data-fa-transform="down-6" ></i></a>
+			<h5 class="panel-title">Color Switcher</h5>
+			<ul id="color-options" class="list-inline mb-0">
+				<li class="theme-1 active list-inline-item"><a data-style="static/assets/css/theme-1.css" href="#"></a></li>
+				<li class="theme-2  list-inline-item"><a data-style="static/assets/css/theme-2.css" href="#"></a></li>
+				<li class="theme-3  list-inline-item"><a data-style="static/assets/css/theme-3.css" href="#"></a></li>
+				<li class="theme-4  list-inline-item"><a data-style="static/assets/css/theme-4.css" href="#"></a></li>
+				<li class="theme-5  list-inline-item"><a data-style="static/assets/css/theme-5.css" href="#"></a></li>
+				<li class="theme-6  list-inline-item"><a data-style="static/assets/css/theme-6.css" href="#"></a></li>
+				<li class="theme-7  list-inline-item"><a data-style="static/assets/css/theme-7.css" href="#"></a></li>
+				<li class="theme-8  list-inline-item"><a data-style="static/assets/css/theme-8.css" href="#"></a></li>
+			</ul>
+			<a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
+		</div><!--//panel-inner-->
+	</div><!--//configure-panel-->
+	
+	
+	
+	<!-- Javascript -->
+	<script src="static/assets/plugins/popper.min.js"></script>
+	<script src="static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Dark/Light Mode Toggle  -->
+	<script src="static/assets/plugins/js-cookie.min.js"></script>
+	<script src="static/assets/js/mode-toggle.js"></script>
+	
+	<!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+	<script src="static/assets/js/demo/style-switcher.js"></script>
+	
+
+</body>

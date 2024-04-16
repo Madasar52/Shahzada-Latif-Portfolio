@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<title>Shahzada madasar Latif - Resume</title>
+	
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Bootstrap 5">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.ico"> 
+	
+	<!-- Google Fonts -->
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	
+	<!-- Bootstrpa Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	
+	<!-- FontAwesome JS -->
+    <script defer src="static/assets/fontawesome/js/all.js"></script>
+    
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="static/assets/plugins/tiny-slider/tiny-slider.css">
+
+	<!-- Theme CSS -->  
+	<link id="theme-style" rel="stylesheet" href="static/assets/css/theme-1.css">
+
+</head> 
+
+
+<body>
+	
+	<div class="container-fluid">
+
+			<div class="side-panel position-relative">
+				 
+				<nav class="navbar">
+			        <div aria-labelledby="offcanvasNavbarLabel" class="offcanvas offcanvas-start show d-flex" id="offcanvasNavbar" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1">
+			            <div class="offcanvas-body d-flex align-items-center ">
+			                <ul class="main-nav navbar-nav text-center">
+				                
+								<li class="nav-item">
+									<a class="nav-link d-flex flex-column" href="{{ url_for('home') }}"><span class="icon-holder"><i class="fa-solid fa-circle-user"></i></span><span class="nav-text">About</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link d-flex flex-column" href="{{ url_for('projects') }}"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span><span class="nav-text">Projects</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link d-flex flex-column" href="{{ url_for('blog_home') }}"><span class="icon-holder"><i class="fa-solid fa-pen-fancy"></i></span><span class="nav-text">Blog</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active d-flex flex-column" href="{{ url_for('resume') }}"><span class="icon-holder"><i class="fa-solid fa-file-lines"></i></span><span class="nav-text">Resume</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link d-flex flex-column" href="{{ url_for('contact') }}"><span class="icon-holder"><i class="fa-solid fa-comment-dots"></i></span><span class="nav-text">Contact</a>
+								</li>
+								<li class="nav-item nav-item-close">
+				                    <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas" type="button"><i class="bi bi-x"></i></button>
+				                </li>
+							</ul>
+			            </div>
+			        </div>
+				  
+				</nav>
+			</div><!--//side-panel-->
+			
+			<div class="main-content-wrapper">
+				<div class="container-fluid">
+					<div class="top-bar text-center position-relative">
+						<div class="top-bar-inner">
+							
+							<a class="menu-toggler" data-bs-toggle="offcanvas" href="#offcanvasNavbar" role="button" aria-controls="offcanvasNavbar">
+								 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+								  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+								</svg>
+					        </a>
+					        
+					        <div class="mode-toggle text-center">
+							    
+							    <input class="toggle" id="darkmode" type="checkbox">
+							    <label class="toggle-btn mx-auto mb-0" for="darkmode">
+							        <span class="day-icon toggle-icon"> <i class="bi bi-sun-fill"></i></span>
+							        <span class="night-icon toggle-icon"><i class="bi bi-moon-fill"></i></span>
+							        
+							    </label>
+							    
+							</div><!--//mode-toggle-->
+							
+							<a class="btn btn-primary top-bar-cta" href="contact.html">Hire Me</a>
+					
+							<ul class="social-list list-inline mx-auto d-none d-lg-block">
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://twitter.com/latif_shah9958"><i class="fa-brands fa-twitter fa-fw"></i></a></li>
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://github.com/Madasar52"><i class="fa-brands fa-github fa-fw"></i></a></li>
+								
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://www.linkedin.com/in/shahzada-madasar-latif-9027bb130/"><i class="fa-brands fa-linkedin-in fa-fw"></i></a></li>
+								
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://stackoverflow.com/users/24164740/madasar-latif"><i class="fa-brands fa-stack-overflow fa-fw"></i></a></li>
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://codepen.io/Madasar-Latif"><i class="fa-brands fa-medium fa-fw"></i></a></li>
+							</ul><!--//social-list-->
+							
+						</div><!--//top-bar-inner-->
+						
+					</div><!--//top-bar-->
+			
+					<div class="resume-wrapper mx-auto rounded-2">
+						<div class="resume-header px-4 px-lg-5">
+							<div class="resume-profile-holder text-center">
+								<img class="resume-profile-pic rounded-circle" src="static/assets/images/profile.png" alt="image">
+								
+								<h2 class="resume-name text-uppercase">Shahzada Madasar Latif </h2>
+								<div class="resume-role-title text-uppercase">Python Developer - Data Scientist - Full Stack Developer</div>
+								<div class="resume-role-title text-uppercase"></div>
+								<div class="resume-contact mt-4">
+									<ul class="resume-contact-list list-unstyled list-inline mb-0 justify-content-between">
+										<li class="list-inline-item me-md-3 me-lg-5"><i class="resume-contact-icon bi bi-telephone-inbound me-2"></i> +1-647-574-4548</li>
+										<li class="list-inline-item me-md-3 me-lg-5"><i class="resume-contact-icon bi bi-envelope me-2"></i> madasar54321@gmail.com</li>
+										<li class="list-inline-item me-lg-5"><i class="resume-contact-icon bi bi-globe me-2"></i> www.yourwebsite.com</li>
+										<li class="list-inline-item me-lg-5"><i class="resume-contact-icon bi me-2" ></i> St Catharines, Ontario</li>
+
+									</ul>
+								</div><!--//resume-contact-->
+							</div><!--//profile-holder-->
+						</div><!--//resume-header-->
+						
+						<div class="resume-body p-4 p-lg-5">
+							<div class="row">
+								<div class="col-main col-12 col-lg-8 pe-lg-4">
+									<section class="resume-summary-section resume-section">
+										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-2 py-lg-3"><i class="resume-section-heading-icon bi bi-person me-2"></i>About Me</h3>
+										<div class="resume-summary-desc">
+											I have strong communication skills, great team player, excel in unpredictable and hectic environment and exceptional in completing multiple projects with competing deadlines. Strong team member, able to motivate others to achieve optimal performance while maintaining quality and safety.Clear communicator, both oral and written.Strong interpersonal skills, interface effectively with coworkers, management and clients.Excel in unpredictable and hectic environment.
+										</div>
+									</section><!--//resume-section-->
+									
+									<hr>
+									
+									<section class="resume-experience-section resume-section">
+										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-briefcase me-2"></i>Work Experience</h3>
+										<div class="resume-timeline position-relative">
+										    <article class="resume-timeline-item position-relative pb-5">
+											    
+											    <div class="resume-timeline-item-header mb-2">
+												    
+												    <div class="resume-position-meta d-flex justify-content-between mb-1">
+													    <div class="resume-position-time">2022 - 2023</div>
+													    <div class="resume-company-name">OSI, An Aspentech Company -  Montreal, Quebec</div>
+												    </div>
+											        <h3 class="resume-position-title mb-1">Power Systems Engineer</h3>
+
+											    </div><!--//resume-timeline-item-header-->
+											    <div class="resume-timeline-item-desc">
+												 
+												   
+												    <ul class="resume-timeline-list">
+													    <li>Hydro-Quebec: Worked in transmission grid modernization project on Hydro-Quebec as a Power Systems Engineer in SCADA
+															ADVANCE team. Worked extensively SCADA platform comprising of installation,testing, configuration and delivery of OSI
+															systems to Hydro-Quebec in the project delivery team in ADMS (Advanced Distribution Management System). Specializing in Switch Order Management, Crew Management system, Planned Outages System and Outage
+															Management System. Excelling in giving system demonstrations, troubleshooting and customer care to Hydro-Quebec counterparts. </li>
+													    <li>New Brunswick Power: Worked as a Power Systems Engineer in New Brunswick Power in project delivery team and worked extensively in the installation, configuration and delivering Switch Order Management system. Giving system demonstrations, systems troubleshooting and client support.</li>
+												    </ul>
+												    
+											    </div><!--//resume-timeline-item-desc-->
+		
+										    </article><!--//resume-timeline-item-->
+								    
+										    <article class="resume-timeline-item position-relative pb-5">
+
+											    <div class="resume-timeline-item-header mb-2">
+												    
+												    <div class="resume-position-meta d-flex justify-content-between mb-1">
+													    <div class="resume-position-time">2021 - 2022</div>
+													    <div class="resume-company-name">Top Modern For Elevator Est. - Jeddah, Saudi Arabia</div>
+												    </div>
+											        <h3 class="resume-position-title mb-1">Project Manager</h3>
+
+											    </div><!--//resume-timeline-item-header-->
+											    <div class="resume-timeline-item-desc">
+												    <ul class="resume-timeline-list">
+													    
+													    <li>Worked on several projects involving installation of elevators and ensuring supply of transmission of electricity to the under construction buildings in a newly developing district from nearby substations.</li>
+													    <li>Monitoring progress, cost estimation, choosing and testing proper specified electronic components and quality control.</li>
+													    <li>Voltage, current and power calculations for the relevant cables and transformers.</li>
+														<li>Making feasibility reports, technical specifications, datasheets preparation and ensuring progress is in line with the project deadlines and dealing with clients as well as ensuring client satisfaction. Leading a team of supervisors, project engineers and management staff.</li>
+												    </ul>
+												    
+											    </div><!--//resume-timeline-item-desc-->
+		
+										    </article><!--//resume-timeline-item-->
+										    <article class="resume-timeline-item position-relative">
+
+											    <div class="resume-timeline-item-header mb-2">
+												    
+												    <div class="resume-position-meta d-flex justify-content-between mb-1">
+													    <div class="resume-position-time">2018 - 2021</div>
+													    <div class="resume-company-name">Maryam Aziz Allah Al-Salmi Est. - Jeddah, Saudi Arabia</div>
+												    </div>
+											        <h3 class="resume-position-title mb-1">Electrical Engineer</h3>
+
+											    </div><!--//resume-timeline-item-header-->
+											    <div class="resume-timeline-item-desc">
+												    <ul class="resume-timeline-list">
+													    
+													    <li>Worked as a lead engineer on multiple projects in several districts of Jeddah, Saudi Arabia. My job duties included making the designs for the street lights, creating Autocad designs for high voltage transmission lines, allocating co ordinates for the street lights for field engineers.</li>
+													    <li>Cost estimation, technical specifications, datasheets preparation, sourcing of required equipment and
+															quality control.</li>
+													    <li>Supervision of a team of 10 to 15 electricians and 50 to 60 installation workers to ensure projects were progressing to the government guidelines and specifications are being accurately followed.</li>
+														<li>Completion of paper work and the approval from government municipal department.</li>
+													   
+												    </ul>
+												    
+											    </div><!--//resume-timeline-item-desc-->
+		
+										    </article><!--//resume-timeline-item-->
+											<article class="resume-timeline-item position-relative">
+
+											    <div class="resume-timeline-item-header mb-2">
+												    
+												    <div class="resume-position-meta d-flex justify-content-between mb-1">
+													    <div class="resume-position-time">2016 - 2018</div>
+													    <div class="resume-company-name">Qasim Ul Hassan Al Amri General Contracting Est. - Jeddah, Saudi Arabia</div>
+												    </div>
+											        <h3 class="resume-position-title mb-1">Electrical Engineer</h3>
+
+											    </div><!--//resume-timeline-item-header-->
+											    <div class="resume-timeline-item-desc">
+												    <ul class="resume-timeline-list">
+													    
+													    <li>Worked as lead engineer government project involving high voltage power transmission cables for electricity distribution. Installation, maintenance, designing transformers and electrical panels for substations.</li>
+													    <li>Designing street lights automation circuits using microprocessors, photo diodes and performing simulations in CircuitLab to ensure functionality and safety.</li>
+													    <li>Maintenance of previously installed street lights and installation of new lights, completion of designs, making site visits and supervising a team of 10 to 15 electricians and 50 to 60 installation workers to ensure all the work is being done to the specifications provided by the government and getting work approved from Government engineer and complete files and all the documents for all the paper work set per the standards of the government.</li>
+
+													   
+												    </ul>
+												    
+											    </div><!--//resume-timeline-item-desc-->
+		
+										    </article><!--//resume-timeline-item-->
+											<article class="resume-timeline-item position-relative">
+
+											    <div class="resume-timeline-item-header mb-2">
+												    
+												    <div class="resume-position-meta d-flex justify-content-between mb-1">
+													    <div class="resume-position-time">2016 - 2016</div>
+													    <div class="resume-company-name">SEMACOM (Saudi Electro-Mechanical and Air Conditioning Corp. Ltd.) - Jeddah, Saudi Arabia</div>
+												    </div>
+											        <h3 class="resume-position-title mb-1">Electrical Engineer</h3>
+
+											    </div><!--//resume-timeline-item-header-->
+											    <div class="resume-timeline-item-desc">
+												    <ul class="resume-timeline-list">
+													    
+													    <li>Worked installation and maintenance of street lights along with all the equipments used within which included but are not limited to installation of electrical panels, installation of electric supply cables and installation of street lights with supervision of electricians and installation workers on site.</li>
+													    <li>Design power electronic circuits with solar integration (DC / DC, DC / AC, designing transoformers, HV LV cables, electrical panels, switching circuit, programming and integration of microprocessors for automation)</li>
+													    <li>Successfully got approved 4 months of pending maintenance work from Mouchel employees and understood all the process from technical report to job order and after approved inspection the job order completion to complete invoice.</li>
+													   
+												    </ul>
+												    
+											    </div><!--//resume-timeline-item-desc-->
+		
+										    </article><!--//resume-timeline-item-->
+											
+							            </div><!--//resume-timeline-->
+									</section><!--//resume-experience-section-->
+								</div><!--//col-8-->
+								<div class="col-12 col-lg-4 ps-lg-4">
+									
+									<section class="resume-skills-section resume-section">
+										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-gear me-2"></i>Tech Stack</h3>
+										
+										<ul class="list-unstyled">
+								        <li class="mb-2">
+								            <div class="resume-skill-name">Python</div>
+											<div class="progress resume-progress" role="progressbar" aria-label="Basic example" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+											  <div class="progress-bar resume-progress-bar" style="width: 98%"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">Data Science</div>
+								            <div class="progress resume-progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+											  <div class="progress-bar resume-progress-bar" style="width: 95%"></div>
+											</div>
+									        
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">HTML5, CSS3, Flask, Bootstrap 4, Databases</div>
+									        <div class="progress resume-progress" role="progressbar" aria-label="Basic example" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+											  <div class="progress-bar resume-progress-bar" style="width: 92%"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name">Front End and Backend Web Development</div>
+									        <div class="progress resume-progress" role="progressbar" aria-label="Basic example" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
+											  <div class="progress-bar resume-progress-bar" style="width: 86%"></div>
+											</div>
+								        </li>
+
+							        </ul>
+										
+									</section><!--//resume-section-->
+									
+									<hr>
+									
+									<section class="resume-skills-section resume-section">
+										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-person-gear me-2"></i>Skills</h3>
+										<ul class="list-inline">
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Python 3</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">PyCharm</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Jupyter Notebook</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Google Colab</span></li>
+
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Python Scripting and Automation</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Python Game Development</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Web Scraping</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Beautiful Soup</span></li>
+
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Selenium Web Driver</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Request</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">WTForms</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Data Science</span></li>
+
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Pandas</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">NumPy</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Plotly</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Scikit learn</span></li>
+
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Seaborn</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Turtle</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Python GUI Desktop App Development</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Tkinter</span></li>
+
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Front-End Web Development</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">HTML 5</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">CSS 3</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Bootstrap 4</span></li>
+
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Bash Command Line</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Git, GitHub and Version Control</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Backend Web Development</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Flask</span></li>
+
+											<li class="list-inline-item"><span class="badge resume-skill-badge">REST</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">APIs</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Databases</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">SQL</span></li>
+
+											<li class="list-inline-item"><span class="badge resume-skill-badge">SQLite</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">PostgreSQL</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Authentication</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Web Design</span></li>
+
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Deployment with GitHub Pages</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Heroku</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">GUnicorn</span></li>
+								            
+								            				           
+							            </ul>
+									</section><!--//resume-section-->
+									
+									<hr>
+									
+									<section class="resume-projects-section resume-section">
+										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-code-slash me-2"></i>Projects</h3>
+										<div class="item">
+											<h4 class="item-heading"><i class="item-icon bi bi-square-fill me-2"></i><a href="https://github.com/Madasar52/Data-Science-Project-7-Nobel_Prize_Analysis">Analyzing Nobel Prize Data</a></h4>
+											<div class="item-desc">
+												Analyzing the "Nobel Prize Data" begining from 1901 to 2020 using various Python modules like Pandas, Plotly, Matplotlib and Seabron.
+											</div>
+										</div><!--//item-->
+										<div class="item">
+											<h4 class="item-heading"><i class="item-icon bi bi-square-fill me-2"></i><a href="https://github.com/Madasar52/My-Top-10-Movies-Website">Top 10 Movies List</a></h4>
+											<div class="item-desc">
+												Top 10 movies list by incorporating SQlite databases with "The Movie Database" API and Python Flask module.
+											</div>
+										</div><!--//item-->
+									
+											
+									</section>
+									
+									<hr>
+									
+									<section class="resume-educate-section resume-section">
+										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-book me-2"></i>Education</h3>
+										<ul class="list-unstyled">
+										    <li class="mb-2">
+										        <div class="resume-degree font-weight-bold">100 Days of Code: The Complete Python Pro Bootcamp</div>
+										        <div class="resume-degree-org">Udemy.com</div>
+										        <div class="resume-degree-time">2023 - 2024</div>
+										    </li>
+										    <li>
+										        <div class="resume-degree font-weight-bold">Bachelors in Electrical Engineering</div>
+										        <div class="resume-degree-org">Mirpur University of Science and Technology (MUST) Mirpur Azad Kashmir, Pakistan</div>
+										        <div class="resume-degree-time">2011 - 2015</div>
+										    </li>
+											<li>
+										        <div class="resume-degree font-weight-bold">Post Graduate Diploma in Business Administration</div>
+										        <div class="resume-degree-org">Virtual University Of Pakistan Islamabad, Pakistan</div>
+										        <div class="resume-degree-time">2019 - 2020</div>
+										    </li>
+									    </ul>
+									</section><!--//resume-section-->
+									
+									<hr>
+									
+									<section class="resume-lang-section resume-section">
+										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-translate me-2"></i>Languages</h3>
+										 <ul class="list-unstyled resume-lang-list">
+										    <li class="mb-2">
+										        <div class="resume-lang-name">English</div>
+										        <div class="resume-level-indicator row gx-0 flex-nowrap">
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+										        </div><!--//resume-level-indicator-->
+										    </li>
+										     <li class="mb-2">
+										        <div class="resume-lang-name">Urdu/Hindi/Punjabi</div>
+										        <div class="resume-level-indicator row gx-0 flex-nowrap">
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+										        </div><!--//resume-level-indicator-->
+										    </li>
+											<li class="mb-2">
+										        <div class="resume-lang-name">Arabic</div>
+										        <div class="resume-level-indicator row gx-0 flex-nowrap">
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item item-full"></span></div>
+											        <div class="col"><span class="item "></span></div>
+											        <div class="col"><span class="item "></span></div>
+											        <div class="col"><span class="item "></span></div>
+											        <div class="col"><span class="item "></span></div>
+											        <div class="col"><span class="item"></span></div>
+										        </div><!--//resume-level-indicator-->
+										</ul>
+									</section>
+									
+									
+									
+								</div><!--//col-side-->
+							</div><!--//row-->
+					    </div><!--//resume-body-->
+				    </div><!--//resume-wrapper-->
+				</div><!--//container-fluid-->
+			</div><!--//main-content-wrapper-->
+		
+		
+		</div><!--//row-->
+	
+	</div><!--//container-->
+	
+	<footer class="footer text-center py-4">
+		<small class="copyright">Shahzada Madasar Latif - Portfolio</a></small>
+	</footer>
+	
+	<!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
+	<div id="config-panel" class="config-panel config-panel-hide d-none d-lg-block">
+		<div class="panel-inner">
+			<a id="config-trigger" class="config-trigger text-center" href="#"><i class="fas fa-cog mx-auto" data-fa-transform="down-6" ></i></a>
+			<h5 class="panel-title">Color Switcher</h5>
+			<ul id="color-options" class="list-inline mb-0">
+				<li class="theme-1 active list-inline-item"><a data-style="static/assets/css/theme-1.css" href="#"></a></li>
+				<li class="theme-2  list-inline-item"><a data-style="static/assets/css/theme-2.css" href="#"></a></li>
+				<li class="theme-3  list-inline-item"><a data-style="static/assets/css/theme-3.css" href="#"></a></li>
+				<li class="theme-4  list-inline-item"><a data-style="static/assets/css/theme-4.css" href="#"></a></li>
+				<li class="theme-5  list-inline-item"><a data-style="static/assets/css/theme-5.css" href="#"></a></li>
+				<li class="theme-6  list-inline-item"><a data-style="static/assets/css/theme-6.css" href="#"></a></li>
+				<li class="theme-7  list-inline-item"><a data-style="static/assets/css/theme-7.css" href="#"></a></li>
+				<li class="theme-8  list-inline-item"><a data-style="static/assets/css/theme-8.css" href="#"></a></li>
+			</ul>
+			<a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
+		</div><!--//panel-inner-->
+	</div><!--//configure-panel-->
+	
+	
+	
+	<!-- Javascript -->
+	<script src="static/assets/plugins/popper.min.js"></script>
+	<script src="static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Dark/Light Mode Toggle  -->
+	<script src="static/assets/plugins/js-cookie.min.js"></script>
+	<script src="static/assets/js/mode-toggle.js"></script>
+
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+	<script src="static/assets/js/demo/style-switcher.js"></script>
+	
+
+</body>

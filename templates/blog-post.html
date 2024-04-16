@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<title>Shahzada Madasar Latif - Blog Post</title>
+	
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Bootstrap 5">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.ico"> 
+	
+	<!-- Google Fonts -->
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	
+	<!-- Bootstrpa Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	
+	<!-- FontAwesome JS -->
+    <script defer src="static/assets/fontawesome/js/all.js"></script>
+    
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="static/assets/plugins/highlight/styles/tokyo-night-dark.min.css">
+
+	<!-- Theme CSS -->  
+	<link id="theme-style" rel="stylesheet" href="static/assets/css/theme-1.css">
+
+</head> 
+
+
+<body>
+	<div class="container-fluid">
+			<div class="side-panel position-relative">
+				 
+				<nav class="navbar">
+			        <div aria-labelledby="offcanvasNavbarLabel" class="offcanvas offcanvas-start show d-flex" id="offcanvasNavbar" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1">
+			            <div class="offcanvas-body d-flex align-items-center ">
+			                <ul class="main-nav navbar-nav text-center">
+				                
+								<li class="nav-item">
+									<a class="nav-link d-flex flex-column" href="{{ url_for('home') }}"><span class="icon-holder"><i class="fa-solid fa-circle-user"></i></span><span class="nav-text">About</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link d-flex flex-column" href="{{ url_for('projects') }}"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span><span class="nav-text">Projects</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link d-flex flex-column" href="{{ url_for('blog_home') }}"><span class="icon-holder"><i class="fa-solid fa-pen-fancy"></i></span><span class="nav-text">Blog</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link d-flex flex-column" href="{{ url_for('resume') }}"><span class="icon-holder"><i class="fa-solid fa-file-lines"></i></span><span class="nav-text">Resume</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link d-flex flex-column" href="{{ url_for('contact') }}"><span class="icon-holder"><i class="fa-solid fa-comment-dots"></i></span><span class="nav-text">Contact</a>
+								</li>
+								<li class="nav-item nav-item-close">
+				                    <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas" type="button"><i class="bi bi-x"></i></button>
+				                </li>
+							</ul>
+			            </div>
+			        </div>
+				  
+				</nav>
+			</div><!--//side-panel-->
+			
+			<div class="main-content-wrapper">
+				<div class="container-fluid">
+					<div class="top-bar text-center position-relative">
+						<div class="top-bar-inner">
+							
+							<a class="menu-toggler" data-bs-toggle="offcanvas" href="#offcanvasNavbar" role="button" aria-controls="offcanvasNavbar">
+								 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+								  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+								</svg>
+					        </a>
+					        
+					        <div class="mode-toggle text-center">
+							    
+							    <input class="toggle" id="darkmode" type="checkbox">
+							    <label class="toggle-btn mx-auto mb-0" for="darkmode">
+							        <span class="day-icon toggle-icon"> <i class="bi bi-sun-fill"></i></span>
+							        <span class="night-icon toggle-icon"><i class="bi bi-moon-fill"></i></span>
+							        
+							    </label>
+							    
+							</div><!--//mode-toggle-->
+							
+							<a class="btn btn-primary top-bar-cta" href="{{ url_for('contact') }}">Hire Me</a>
+					
+							<ul class="social-list list-inline mx-auto d-none d-lg-block">
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://twitter.com/latif_shah9958"><i class="fa-brands fa-twitter fa-fw"></i></a></li>
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://github.com/Madasar52"><i class="fa-brands fa-github fa-fw"></i></a></li>
+								
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://www.linkedin.com/in/shahzada-madasar-latif-9027bb130/"><i class="fa-brands fa-linkedin-in fa-fw"></i></a></li>
+								
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://stackoverflow.com/users/24164740/madasar-latif"><i class="fa-brands fa-stack-overflow fa-fw"></i></a></li>
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://codepen.io/Madasar-Latif"><i class="fa-brands fa-medium fa-fw"></i></a></li>
+							</ul><!--//social-list-->
+							
+						</div><!--//top-bar-inner-->
+						
+					</div><!--//top-bar-->
+					
+					<section class="blog-post-section section has-profile-image mx-auto">
+						<div class="profile-holder text-center">
+							<img class="profile-pic rounded-circle" src="static/assets/images/profile.png" alt="image">
+						</div><!--//profile-holder-->
+						
+						<div class="blog-breadcrumb">
+		                    <a class="blog-home-link" href="{{ url_for('blog_home') }}"><i class="bi bi-arrow-left"></i> Back To Blog Home</a>
+	                    </div>
+			                    
+						<div class="blog-entry">                 
+			                <article class="post">
+			                    <h2 class="post-title text-center py-2">Does life exist in space?</h2>
+			                    <div class="post-author text-center mb-3">By <a href="{{ url_for('home') }}">Shahzada Madasar Latif</a></div>
+			                    <div class="post-meta"> 
+		                            <ul class="meta-list list-inline d-flex justify-content-center">                                       
+		                                <li class="list-inline-item post-time">Apr 12</li>
+		                                <li class="list-inline-item post-length">12 min read</li>
+			                        	<li class="list-inline-item post-comments-link">
+			                    	        <a href="#blog-comment-area">0 comments</a>
+			                    	    </li>
+		
+		                            </ul><!--//meta-list-->        
+		                                   	
+			                    </div><!--post-meta-->
+		                        
+			                    <div class="post-content">
+			                        <p class="post-figure">
+			                            <img class="img-fluid rounded" src="static/assets/images/blog/space.jpg" alt="image">
+			                        </p><!--//post-figure-->
+			                        <p>
+										The question of whether life exists beyond Earth is one of the most intriguing and profound inquiries in science. While there is currently no definitive evidence of extraterrestrial life, the sheer vastness of the universe and the discovery of exoplanets—planets orbiting stars outside our solar system—suggest that the possibility is tantalizingly real.</p>
+			                        
+			                        <figure class="blog-quote-holder p-4 p-lg-5 my-5 rounded">
+				                        <blockquote class="blockquote theme-custom-quote">
+				                            <p><i class="quote-icon fa-solid d-none d-lg-inline-block"></i>The Universe is under no obligation to make sense to you.</p>
+				                        </blockquote>   
+			                            <figcaption class="blockquote-footer">
+			                                <cite title="Source Title">Neil deGrasse Tyson</cite>
+										</figcaption>
+			                        </figure><!--//blog-quote-holder-->
+			
+			                        <p>Over the past few decades, astronomers have made remarkable advancements in detecting exoplanets, some of which reside in the habitable zone of their parent stars—a region where conditions may be suitable for liquid water to exist on the planet's surface, a key ingredient for life as we know it. Additionally, recent studies have revealed the presence of complex organic molecules, the building blocks of life, in various cosmic environments such as comets, asteroids, and interstellar clouds.</p>
+			                        
+			                        
+			                        
+			                        
+		                            <ul class="post-list ps-5 py-3">
+										<li>Technology Advancements: Over the years, technological advancements have enabled us to develop spacecraft, habitats, life support systems, and protective gear that can sustain human life in the harsh environment of space. These innovations include advanced materials for constructing spacecraft, efficient recycling systems for water and air, and radiation shielding to protect astronauts from harmful cosmic rays.</li>
+										<li>International Collaboration: Space exploration is often a collaborative effort among nations. International space agencies like NASA, ESA, Roscosmos, and others pool their resources, knowledge, and expertise to tackle the challenges of living and working in space. This collaboration allows for the sharing of costs, expertise, and resources, making space missions more feasible and sustainable.</li>
+										<li>Biological Adaptation: Humans have shown a remarkable ability to adapt to new environments. Through rigorous training and preparation, astronauts undergo physical and psychological conditioning to cope with the rigors of space travel. Additionally, scientific research conducted aboard space stations like the International Space Station (ISS) helps us understand how the human body responds to microgravity and develop countermeasures to mitigate its effects.</li>
+										
+										<li>Potential for Extraterrestrial Habitats: While current space habitats are primarily confined to space stations and spacecraft, there is growing interest in the exploration and colonization of other celestial bodies, such as the Moon and Mars. Establishing permanent settlements on these bodies would provide more sustainable living environments with access to resources like water ice and regolith for building materials. Moreover, advances in terraforming technologies may one day make it possible to transform inhospitable environments into habitable ones, further expanding the potential for life beyond Earth.</li>
+									</ul>
+									
+									<h3 class="mt-5 mb-3">Further Arguments:</h3>
+								    <p>Moreover, within our solar system, tantalizing clues hint at the potential for life beyond Earth. Mars, once thought to be a desolate and barren world, harbors evidence of ancient river valleys and lake beds, suggesting it may have once been hospitable to life. The presence of subsurface liquid water on Mars and the detection of methane in its atmosphere further fuel speculation about the possibility of microbial life lurking beneath its surface. </p>
+
+
+			                        <h3 class="post-content-heading">Jupiter's Moons:</h3>
+			                        
+			                        <p>Europa, one of Jupiter's moons, and Enceladus, a moon of Saturn, possess subsurface oceans beneath their icy crusts, raising the tantalizing prospect of habitable environments within our own cosmic backyard. These moons exhibit geologic activity that could provide the necessary energy and nutrients to support microbial life.</p>
+			                        
+	
+			                        
+			                        <p>Beyond our solar system, the search for extraterrestrial intelligence (SETI) continues through endeavors like the search for radio signals or techno-signatures that may indicate the presence of advanced civilizations elsewhere in the cosmos.</p>
+			                        
+			                        <ul class="post-list list-unstyled ps-4 py-3">
+			                           <li><i class="bi bi-check me-2"></i>Earth's Moon (Luna): Earth's only natural satellite, the Moon, has fascinated humanity for millennia. It is the fifth-largest moon in the solar system and plays a crucial role in stabilizing Earth's axial tilt and tides.</li>
+			                           <li><i class="bi bi-check me-2"></i>Mars' Moons (Phobos and Deimos): Mars has two small moons named Phobos and Deimos, which are irregularly shaped and likely captured asteroids. They were discovered in 1877 by American astronomer Asaph Hall.</li>
+			                           <li><i class="bi bi-check me-2"></i>Jupiter's Moons (Galilean Moons): Jupiter has a vast system of moons, with the four largest known as the Galilean moons: Io, Europa, Ganymede, and Callisto. These moons were discovered by Galileo Galilei in 1610 and are among the most studied objects in the solar system.</li>
+			                           <li><i class="bi bi-check me-2"></i>Saturn's Moons (Titan and Enceladus): Saturn has over 80 moons, but two of the most intriguing are Titan and Enceladus. Titan is the largest moon of Saturn and the second-largest moon in the solar system. It has a thick atmosphere and hydrocarbon lakes on its surface. Enceladus is smaller but notable for its active geysers, which spew water vapor and ice into space from beneath its icy surface.</li>
+			                        </ul>
+			                        
+			                        <p>Uranus' Moons: Uranus has 27 known moons, with the five largest being Miranda, Ariel, Umbriel, Titania, and Oberon. These moons are composed primarily of ice and rock.Neptune's Moon (Triton): Triton is the largest moon of Neptune and the only large moon in the solar system that has a retrograde orbit, meaning it orbits in the opposite direction of its planet's rotation. Triton is believed to be a captured Kuiper Belt object and exhibits active geysers of nitrogen gas.Pluto's Moon (Charon): Charon is the largest moon of Pluto and is so large in comparison that some scientists consider Pluto-Charon to be a binary system rather than a planet-moon pair. Charon is tidally locked with Pluto, meaning the same face always points toward the planet.</p>
+
+			                        <h3 class="post-content-heading">Conclusion:</h3>
+			                        
+			                        <p>While the search for extraterrestrial life remains ongoing, it's important to approach the topic with scientific rigor and an open mind. While we have yet to find definitive evidence of life beyond Earth, the exploration of our universe continues to reveal new wonders and mysteries, fueling our curiosity and expanding our understanding of the cosmos. As we venture further into the depths of space, the quest to unravel the mystery of life's existence beyond our planet remains one of humanity's most profound and enduring pursuits.</p>
+			                                                    
+			                    </div><!--//post-content-->
+			                    
+			                    <div class="post-tags py-5">
+									<ul class="list-inline">
+										<li class="list-inline-item"><strong>Tags:</strong></li>
+										<li class="list-inline-item"><span class="badge tag-badge">space-time</span></li>
+										<li class="list-inline-item"><span class="badge tag-badge">physics</span></li>
+										<li class="list-inline-item"><span class="badge tag-badge">astronomy</span></li>
+										<li class="list-inline-item"><span class="badge tag-badge">satellite</span></li>
+									</ul>
+								</div><!--//post-tags-->
+			
+			                    <nav class="post-nav d-flex justify-content-between mb-5">
+			    						<div class="nav-previous"><a href="#" rel="prev"><i class="bi bi-arrow-left me-2"></i>Previous</a></div>
+			    						<div class="nav-next"><a href="#" rel="next">Next<i class="bi bi-arrow-right ms-2"></i></a></div>
+			    				</nav><!--//post-nav-->
+			    				
+	<footer class="footer text-center py-4">
+		<small class="copyright">Shahzada Madasar Latif - Portfolio</a></small>
+	</footer>
+	
+	<!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
+	<div id="config-panel" class="config-panel config-panel-hide d-none d-lg-block">
+		<div class="panel-inner">
+			<a id="config-trigger" class="config-trigger text-center" href="#"><i class="fas fa-cog mx-auto" data-fa-transform="down-6" ></i></a>
+			<h5 class="panel-title">Color Switcher</h5>
+			<ul id="color-options" class="list-inline mb-0">
+				<li class="theme-1 active list-inline-item"><a data-style="static/assets/css/theme-1.css" href="#"></a></li>
+				<li class="theme-2  list-inline-item"><a data-style="static/assets/css/theme-2.css" href="#"></a></li>
+				<li class="theme-3  list-inline-item"><a data-style="static/assets/css/theme-3.css" href="#"></a></li>
+				<li class="theme-4  list-inline-item"><a data-style="static/assets/css/theme-4.css" href="#"></a></li>
+				<li class="theme-5  list-inline-item"><a data-style="static/assets/css/theme-5.css" href="#"></a></li>
+				<li class="theme-6  list-inline-item"><a data-style="static/assets/css/theme-6.css" href="#"></a></li>
+				<li class="theme-7  list-inline-item"><a data-style="static/assets/css/theme-7.css" href="#"></a></li>
+				<li class="theme-8  list-inline-item"><a data-style="static/assets/css/theme-8.css" href="#"></a></li>
+			</ul>
+			<a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
+		</div><!--//panel-inner-->
+	</div><!--//configure-panel-->
+	
+	
+	
+	<!-- Javascript -->
+	<script src="static/assets/plugins/popper.min.js"></script>
+	<script src="static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Page Specific JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="static/assets/js/highlight-custom.js"></script>
+	
+	<!-- Dark/Light Mode Toggle  -->
+	<script src="static/assets/plugins/js-cookie.min.js"></script>
+	<script src="static/assets/js/mode-toggle.js"></script>
+	
+	
+	
+	<!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+	<script src="static/assets/js/demo/style-switcher.js"></script>
+	
+
+</body>
