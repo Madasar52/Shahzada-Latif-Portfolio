@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect, url_for, request, flash
 import smtplib
 import os
+from email.mime.text import MIMEText
 
 
 app = Flask(__name__)
@@ -27,19 +28,22 @@ def case_study():
 def contact():
     if request.method=="POST":
         my_email=os.environ.get("email")
+        to_email = os.environ.get("my_email")
         password=os.environ.get("password")
         message = request.form['message']
         name = request.form['name']
         email = request.form['email']
-        with smtplib.SMTP("smtp.gmail.com") as connection:
-            connection.starttls()
-            connection.login(user=my_email,password=password)
-            connection.sendmail(from_addr=my_email,
-                                to_addrs=os.environ.get("my_email"),
-                                msg=f"Subject: Query from Shahzada's portfolio!\n\nMessage: {message}\n\nContact information of sender:\nName: {name}\n\nEmail: {email}",
-                                )
-            flash("Email sent to Shahzada!")
-            return redirect(url_for('contact'))
+
+        msg = MIMEText(f"Message: {message}\n\nContact information of sender:\nName: {name}\n\nEmail: {email}")
+        msg['Subject'] = "Query from Shahzada's portfolio!"
+
+        s = smtplib.SMTP('smtp.gmail.com:587')
+        s.starttls()
+        s.login(my_email, password)
+        s.sendmail(my_email, to_email, msg.as_string())
+        s.quit()
+        flash("Email sent to Shahzada!")
+        return redirect(url_for('contact'))
     return render_template('contact.html')
 
 @app.route("/projects")
