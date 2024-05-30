@@ -2,7 +2,7 @@
 
 /* Dependency: js-cookie plugin - Ref: https://github.com/js-cookie/js-cookie */
 
-const modeToggler = document.getElementById('');
+const modeToggler = document.getElementById('darkmode');
 const documentBody = document.getElementsByTagName('body')[0];
 
 
